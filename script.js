@@ -12,7 +12,7 @@ function plasticDetected() {
   const timeLeftDisplay = document.getElementById("timeLeft");
 
   // Update status
-  status.innerHTML = "✅ Plastic Detected! 5 minutes of Wi-Fi access granted.";
+  status.innerHTML = "Plastic Detected!" <br> "5 minutes of Wi-Fi access granted.";
   status.classList.add("connected");
 
   // Show timer
@@ -30,7 +30,7 @@ function plasticDetected() {
 
     if (timeLeft < 0) {
       clearInterval(countdown);
-      status.innerHTML = "⛔ Wi-Fi Access Expired. Please insert another plastic item.";
+      status.innerHTML = "Wi-Fi Access Expired." <br> "Please insert another plastic item.";
       status.classList.remove("connected");
       status.classList.add("disconnected");
       timer.classList.add("hidden");
